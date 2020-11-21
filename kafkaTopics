@@ -1,0 +1,7 @@
+sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-server-start.sh /home/puc/kafka_2.11-1.0.0/config/server.properties
+this first command executes the server of kafka localy (no cluster). It must be keep opened
+
+sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --create --zookeeper localhost: 2181 --replication-factor 1 --partitions 1 --topic testing
+creating a topic on kafka
+
+sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-topics.sh --list --zookeeper localhost: 2181--replication-factor 1 --partitions1 --topic testing
