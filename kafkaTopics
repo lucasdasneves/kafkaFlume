@@ -22,3 +22,19 @@ flume-ng agent --conf-file spool-to-kafka.properties --name agent2 -Dflume.root.
 Now I using this cmd to add topics from a file on consumer
 
 Done
+
+flume-ng agent --conf-file twitter.properties --name agent3 -Dflume.root.logger=WARN,console
+
+sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic twittertopic --from-beginning
+
+How to read twitter data with kafla and flume?
+
+flume-ng agent --conf-file twitter.properties --name agent3 -Dflume.root.logger=WARN,console
+
+sudo /home/puc/kafka_2.11-1.0.0/bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic twittertopic --from-beginning
+
+Execute these both commands
+
+The agent3 is te name of an agent in a file on my pc
+
+twitter.properties is the name of the file
